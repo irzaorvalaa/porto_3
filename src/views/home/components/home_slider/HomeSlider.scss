@@ -1,0 +1,221 @@
+.home-slider {
+  width: 90%;
+  @apply block
+    relative mx-auto;
+
+  &__wrapper {
+    @apply bg-red-400
+      relative;
+
+    @screen xs {
+      height: var(--slider-height-mobile);
+      max-height: var(--slider-height-mobile);
+    }
+
+    @screen md {
+      height: var(--slider-height-desktop);
+      max-height: var(--slider-height-desktop);
+    }
+  }
+
+  &__image {
+    @apply w-full
+      object-fill;
+
+    @screen xs {
+      height: var(--slider-height-mobile);
+    }
+
+    @screen md {
+      height: var(--slider-height-desktop);
+    }
+  }
+
+  &__content {
+    @apply absolute
+      flex
+      flex-col
+      justify-end
+      top-0
+      left-0
+      pb-6
+      w-full
+      h-full;
+
+    @screen xs {
+      @apply px-8;
+    }
+
+    @screen md {
+      @apply px-16;
+    }
+  }
+
+  &__title {
+    @apply text-white
+      font-bold;
+
+    @screen xs {
+      @apply text-base;
+    }
+
+    @screen md {
+      @apply text-xl;
+    }
+  }
+
+  &__caption {
+    @apply text-gray-300;
+
+    @screen xs {
+      @apply hidden
+        text-base;
+    }
+
+    @screen md {
+      @apply block;
+    }
+  }
+
+  &__icon {
+    @apply fill-current
+      text-primary-500
+      opacity-50;
+
+    @screen xs {
+      @apply h-4
+        w-4;
+    }
+
+    @screen md {
+      @apply h-8
+        w-8;
+    }
+  }
+
+  &__empty {
+    @apply flex
+      flex-col
+      items-center
+      justify-center
+      w-full
+      #{!important};
+
+    @screen xs {
+      height: var(--slider-height-mobile);
+    }
+
+    @screen md {
+      height: var(--slider-height-desktop);
+    }
+
+    &--title {
+      @apply mt-6
+        text-base
+        font-bold;
+    }
+  }
+
+  &__loading {
+    @apply transform-none;
+
+    @screen xs {
+      height: var(--slider-height-mobile);
+    }
+
+    @screen md {
+      height: var(--slider-height-desktop);
+    }
+  }
+
+  .slick-dots {
+    @apply bottom-4;
+
+    li {
+      @apply mx-1
+        h-1;
+
+      &:not(:has(.slick-active)) {
+        @apply w-1;
+      }
+
+      &.slick-active {
+        @apply w-4;
+
+        button {
+          @apply block
+            bg-primary-500
+            w-4
+            h-1
+            p-0
+            rounded-full;
+
+          &::before {
+            @apply content-none;
+          }
+        }
+      }
+
+      button {
+        background-color: #030303;
+        @apply block
+          w-1
+          h-1
+          p-0
+          rounded-full;
+
+        &::before {
+          @apply content-none;
+        }
+      }
+    }
+  }
+
+  .slick-next {
+    @apply z-10
+      #{!important};
+
+    &::before {
+      @apply content-none;
+    }
+
+    @screen xs {
+      @apply h-4
+        w-4
+        right-3
+        #{!important};
+    }
+
+    @screen md {
+      @apply block
+        h-8
+        w-8
+        right-6
+        #{!important};
+    }
+  }
+
+  .slick-prev {
+    @apply z-10
+      #{!important};
+
+    &::before {
+      @apply content-none;
+    }
+
+    @screen xs {
+      @apply h-4
+        w-4
+        left-3
+        #{!important};
+    }
+
+    @screen md {
+      @apply block
+        h-8
+        w-8
+        left-6
+        #{!important};
+    }
+  }
+}

@@ -1,0 +1,12 @@
+.drawer-toolbar {
+  &__logo {
+    height: 3rem;
+    // @apply
+    //   h-10
+    //   w-28;
+  }
+}
+
+.drawer-list {
+  @apply overflow-y-auto relative;
+}

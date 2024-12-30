@@ -1,0 +1,15 @@
+[
+  { "id": "1", "statusOrder": "Waiting Payment" },
+  {
+    "id": "2",
+    "statusOrder": "On Process"
+  },
+  {
+    "id": "3",
+    "statusOrder": "On Delivery"
+  },
+  {
+    "id": "2",
+    "statusOrder": "Completed"
+  }
+]

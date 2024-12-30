@@ -1,0 +1,30 @@
+.home-bts-category {
+  @apply grid
+      grid-flow-col
+      gap-14
+      mx-auto
+      my-4
+      mb-10;
+
+  &__item {
+    width: 400px;
+    height: 250px;
+    background-color: orange;
+    @apply rounded-2xl;
+    &--item1 {
+      background-image: url('../../../../../src/assets/img/campus-1.jpeg');
+    }
+    &--item2 {
+      background-image: url('../../../../../src/assets/img/kertas-bg.jpeg');
+    }
+    &--item3 {
+      background-image: url('../../../../../src/assets/img/news-1.jpeg');
+    }
+    &--header {
+      @apply font-bold ml-6 mt-2;
+    }
+    &--footer {
+      @apply ml-8 py-32 font-bold text-xl;
+    }
+  }
+}

@@ -1,0 +1,88 @@
+[
+  {
+    "id": "1",
+    "title": "Meditations",
+    "author": "Macrus Aurelius",
+    "distr": "Gramedia",
+    "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae quidem similique vitae alias numquam, quam magni autem accusantium at beatae culpa praesentium eum atque modi nobis est incidunt ipsam officia",
+    "image": "assets/img/1.png"
+  },
+  {
+    "id": "2",
+    "title": "Politics",
+    "author": "Aristoteles",
+    "distr": "Gramedia",
+    "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae quidem similique vitae alias numquam, quam magni autem accusantium at beatae culpa praesentium eum atque modi nobis est incidunt ipsam officia",
+    "image": "assets/img/2.jpeg"
+  },
+  {
+    "id": "3",
+    "title": "The Little Book Of Stoicism",
+    "author": "Jonas Salzgeber",
+    "distr": "Gramedia",
+    "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae quidem similique vitae alias numquam, quam magni autem accusantium at beatae culpa praesentium eum atque modi nobis est incidunt ipsam officia",
+
+    "image": "assets/img/3.jpeg"
+  },
+  {
+    "id": "4",
+    "title": "A History Of Western Philosophy",
+    "author": "Bertrand Russell",
+    "distr": "Gramedia",
+    "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae quidem similique vitae alias numquam, quam magni autem accusantium at beatae culpa praesentium eum atque modi nobis est incidunt ipsam officia",
+
+    "image": "assets/img/4.jpeg"
+  },
+  {
+    "id": "5",
+    "title": "Beyond Good And Evil",
+    "author": "Friedrich Nietzsche",
+    "distr": "Gramedia",
+    "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae quidem similique vitae alias numquam, quam magni autem accusantium at beatae culpa praesentium eum atque modi nobis est incidunt ipsam officia",
+
+    "image": "assets/img/5.jpeg"
+  },
+  {
+    "id": "6",
+    "title": "Meditations",
+    "author": "Macrus Aurelius",
+    "distr": "Gramedia",
+    "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae quidem similique vitae alias numquam, quam magni autem accusantium at beatae culpa praesentium eum atque modi nobis est incidunt ipsam officia",
+    "image": "assets/img/1.png"
+  },
+  {
+    "id": "7",
+    "title": "Politics",
+    "author": "Aristoteles",
+    "distr": "Gramedia",
+    "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae quidem similique vitae alias numquam, quam magni autem accusantium at beatae culpa praesentium eum atque modi nobis est incidunt ipsam officia",
+    "image": "assets/img/2.jpeg"
+  },
+  {
+    "id": "8",
+    "title": "The Little Book Of Stoicism",
+    "author": "Jonas Salzgeber",
+    "distr": "Gramedia",
+    "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae quidem similique vitae alias numquam, quam magni autem accusantium at beatae culpa praesentium eum atque modi nobis est incidunt ipsam officia",
+
+    "image": "assets/img/3.jpeg"
+  },
+  {
+    "id": "9",
+    "title": "A History Of Western Philosophy",
+    "author": "Bertrand Russell",
+    "distr": "Gramedia",
+    "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae quidem similique vitae alias numquam, quam magni autem accusantium at beatae culpa praesentium eum atque modi nobis est incidunt ipsam officia",
+
+    "image": "assets/img/4.jpeg"
+  },
+  {
+    "id": "10",
+    "title": "Beyond Good And Evil",
+    "author": "Friedrich Nietzsche",
+    "distr": "Gramedia",
+    "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae quidem similique vitae alias numquam, quam magni autem accusantium at beatae culpa praesentium eum atque modi nobis est incidunt ipsam officia",
+
+    "image": "assets/img/5.jpeg"
+  }
+]

@@ -1,0 +1,63 @@
+.datagrid--toolbar-filter {
+  border-color: #c9c6c6;
+  @apply
+    flex
+    flex-col
+    mt-4
+    border-b;
+
+  &__container {
+    @apply flex;
+
+    @screen xs {
+      @apply
+        flex-col;
+    }
+
+    @screen md {
+      @apply
+        flex-row;
+    }
+
+    > div {
+      &:nth-child(1) {
+        @screen xs {
+          @apply
+            w-full
+            mr-0;
+        }
+
+        @screen md {
+          @apply
+            w-4/12
+            mr-10
+            mb-0;
+        }
+      }
+
+      &:nth-child(2) {
+        @screen xs {
+          @apply w-full;
+        }
+
+        @screen md {
+          @apply w-4/12;
+        }
+      }
+    }
+  }
+
+  &__button {
+    @apply
+      flex
+      self-start;
+
+    @screen xs {
+      @apply my-6;
+    }
+
+    @screen md {
+      @apply my-10;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+[
+  {
+    "id": "1",
+    "name": "Diego Syahib",
+    "email": "diegosyahib@gmail.com",
+    "gender": "male",
+    "birthdate": "2000-12-01",
+    "image": "assets/img/1.png",
+    "phone": 6287212342,
+    "customerType": 1,
+    "password": "anjayani1"
+  }
+]

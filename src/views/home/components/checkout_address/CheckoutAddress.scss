@@ -1,0 +1,100 @@
+.CheckoutAddress {
+  &__container {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 25%;
+    padding: 1%;
+    height: auto;
+    border-radius: 0px 10px 10px 0px;
+    background-color: #67102e;
+  }
+  &__pageTitle {
+    @apply mx-auto my-auto;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  &__flexCart {
+    @apply mx-auto my-auto;
+    margin-left: 4%;
+    display: flex;
+    flex-wrap: wrap;
+    flex: auto;
+    flex-direction: column;
+  }
+  &__flexCheckbox {
+    @apply flex flex-row justify-between w-full mt-2;
+  }
+  &__pickAccount {
+    @apply text-red-600 mt-2;
+  }
+  &__Responsive {
+    font-size: 20px;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    max-width: 100%;
+    height: 1300px;
+  }
+  &__Responsive2 {
+    font-size: 20px;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    max-width: 100%;
+    height: 1300px;
+  }
+  &__AddressFormTitle {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 2%;
+  }
+  &__AddressFormTitle2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 4%;
+    margin-top: 8%;
+  }
+  &__TextField {
+    width: 44.5%;
+    border-radius: 10px;
+  }
+  &__TextField2 {
+    width: 92.7%;
+  }
+  &__textArea {
+    width: 92.7%;
+    border-width: 4px;
+    border: 4px;
+    color: black;
+  }
+  &__saveAddress {
+    width: 92.7%;
+    border-width: 4px;
+    border: 4px;
+  }
+  &__quantityBox {
+    font-size: 20px;
+    color: black;
+  }
+  &__cartTitle {
+    border-radius: 0px 10px 10px 0;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    position: relative;
+    display: inline-block;
+    padding-top: 10px;
+    background-color: black;
+  }
+  &__AddressForm {
+    font-size: 20px;
+  }
+  &__checkOut {
+    font-size: 20px;
+    width: 150%;
+  }
+  &__title {
+    @apply text-2xl font-medium text-white text-center;
+  }
+}

@@ -1,0 +1,24 @@
+[
+  {
+    "id": "1",
+    "name": "Diego Syahib",
+    "email": "diegosyahib@gmail.com",
+    "orderID": "SP2134455",
+    "orderDate": "2000-12-01",
+    "productCategory": "TextBook",
+    "price": 100000,
+    "totalPrice": 100000,
+    "orderStatus": "On Delivery"
+  },
+  {
+    "id": "2",
+    "name": "Jamal",
+    "email": "jamal@gmail.com",
+    "orderID": "SP2134456",
+    "orderDate": "2000-12-01",
+    "productCategory": "TextBook",
+    "price": 200000,
+    "totalPrice": 200000,
+    "orderStatus": "On Delivery"
+  }
+]

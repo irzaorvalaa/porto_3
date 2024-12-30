@@ -1,0 +1,82 @@
+.datagrid {
+  @apply w-full
+    py-6;
+
+  &__container {
+    @apply flex
+        h-full;
+  }
+
+  &__content {
+    @apply flex-grow;
+
+    .MuiDataGrid-root {
+      @apply border-none;
+    }
+
+    .MuiDataGrid-main {
+      border-color: #dadada;
+      @apply
+        border
+        border-solid
+        rounded-sm;
+    }
+
+    .MuiDataGrid-columnHeaders {
+      background-color: #fbfbfb;
+      @apply
+        rounded-none;
+    }
+
+    .MuiDataGrid-columnHeader,
+    .MuiDataGrid-cell {
+      &:focus,
+      &:focus-within {
+        @apply outline-none;
+      }
+    }
+  }
+
+  &__row {
+    &--even {
+      background-color: #f1f1f1;
+    }
+  }
+
+  &__cell {
+    @apply whitespace-normal
+        #{!important};
+
+    &--items-start {
+      @apply items-start
+            pt-1.5
+            #{!important};
+    }
+  }
+
+  &__toolbar {
+    @apply flex
+        flex-col
+        border-b
+        px-2
+        py-2;
+
+    &--button {
+      @apply mb-2;
+
+      @screen sm {
+        @apply mb-0;
+      }
+    }
+
+    &--quickfilter {
+      @apply pb-0;
+    }
+
+    @screen sm {
+      @apply flex-row
+          items-center
+          justify-between;
+    }
+  }
+}

@@ -1,0 +1,46 @@
+.detail-transaction {
+  width: 100%;
+  @apply p-6;
+  &__top {
+    &--title {
+      @apply text-center mb-5 font-bold text-2xl;
+    }
+    &--container {
+      &__category {
+        @apply font-bold text-xl;
+      }
+      &__card {
+        width: 100%;
+        border-width: 1px;
+
+        border-radius: 10px;
+        box-shadow: 1px 3px 10px rgba(49, 0, 50, 0.25);
+        @apply p-5 mx-auto mb-5 grid grid-flow-col;
+        &--img {
+          width: 100%;
+        }
+        &--txt {
+          width: 100%;
+          @apply mr-7;
+          &__title {
+            @apply text-xl mb-3;
+          }
+        }
+        &--total {
+          @apply ml-7 text-center my-auto;
+          &__txt {
+            @apply text-sm;
+          }
+          &__price {
+            @apply text-xl font-bold;
+          }
+        }
+      }
+    }
+  }
+  &__bottom {
+    &--status {
+      @apply grid grid-flow-col justify-between my-2;
+    }
+  }
+}

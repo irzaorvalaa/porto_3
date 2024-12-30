@@ -1,0 +1,41 @@
+.home-menu {
+  @apply my-7;
+
+  &__container {
+    @apply mx-auto
+      grid;
+
+    @screen xs {
+      @apply w-full
+        grid-cols-3
+        gap-4
+        px-4;
+    }
+
+    @screen md {
+      @apply container
+        grid-cols-3
+        px-0;
+    }
+
+    @screen lg {
+      @apply container
+        grid-cols-6
+        gap-6;
+    }
+  }
+
+  &__button {
+    @apply border
+      border-black300
+      rounded-md
+      flex
+      flex-col;
+  }
+
+  &__buttonlabel {
+    @apply text-sm
+      font-bold
+      mt-3;
+  }
+}

@@ -1,0 +1,167 @@
+.logo-login {
+  &--logo-login {
+    @apply h-20
+          mx-5;
+    width: 250px;
+  }
+  &--logo-ribbon {
+    @apply h-24
+          mx-10;
+    width: 250px;
+  }
+  &--label-text {
+    margin-left: 10;
+    @apply mt-12
+      mx-12
+      m-1
+    items-start;
+  }
+
+  .login-page {
+    background-image: linear-gradient(
+      270deg,
+      rgba(118, 55, 123, 0.8) 0%,
+      rgba(85, 53, 174, 0.8) 29.49%,
+      rgba(0, 91, 174, 0.8) 55.77%,
+      rgba(0, 52, 235, 0.552) 100%,
+      rgba(0, 193, 254, 0.44) 100%
+    );
+    @apply min-h-screen
+    w-full;
+
+    &__container {
+      @apply container
+        mx-auto;
+    }
+
+    &__header {
+      @apply flex
+        flex-col
+        items-center
+        pt-16;
+
+      @screen sm {
+        @apply w-auto
+                h-auto;
+      }
+    }
+
+    @screen sm {
+      @apply items-start;
+    }
+  }
+
+  &__content {
+    height: 545px;
+    max-height: 545px;
+    @apply flex
+        flex-col
+        items-center
+        mt-8;
+
+    &--left {
+      @apply h-full
+            hidden
+            px-0;
+
+      @screen lg {
+        @apply flex
+                flex-1
+                px-20;
+      }
+
+      .slick-slider {
+        @apply h-full
+                w-full;
+      }
+    }
+
+    &--right {
+      @apply flex
+            flex-1
+            items-start
+            justify-start;
+
+      @screen sm {
+      }
+    }
+
+    @screen sm {
+      @apply flex-row
+            items-start
+            mt-8;
+    }
+  }
+
+  &__wrapper {
+    width: 350px;
+    box-shadow: -3px 6px 30px rgba(0, 0, 0, 0.25);
+    @apply bg-black
+        bg-opacity-20
+        rounded-2xl
+        py-12
+        px-8;
+
+    &--header {
+      @apply flex
+            flex-col
+            items-start
+            gap-2
+            justify-between
+            text-white;
+
+      h1 {
+        @apply text-3xl;
+      }
+
+      @screen sm {
+        @apply flex-row
+                items-center
+                justify-between;
+      }
+    }
+
+    &--content {
+      @apply my-4;
+    }
+
+    &--action {
+      @apply flex
+            items-start
+            justify-center;
+    }
+
+    @screen sm {
+      width: 500px;
+    }
+  }
+
+  &__button {
+    @apply self-end;
+
+    &--active {
+      @apply cursor-default;
+    }
+
+    &--inactive {
+      @apply text-white
+            bg-black
+            bg-opacity-40;
+    }
+
+    &--icon {
+      @apply fill-current
+            h-6
+            w-6
+            text-black;
+    }
+
+    &--large {
+      @apply py-4;
+    }
+  }
+
+  &__logo-login {
+    mx: 3px;
+  }
+}

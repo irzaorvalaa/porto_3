@@ -1,0 +1,388 @@
+.home-news-event {
+  @apply my-7;
+
+  &__container {
+    @apply
+      flex
+      flex-col
+      mx-auto;
+
+    @screen xs {
+      @apply
+        w-full
+        px-4;
+    }
+
+    @screen md {
+      @apply
+        container
+        px-0;
+    }
+  }
+
+  &__title {
+    @apply
+      text-darkblue
+      font-bold;
+
+    @screen xs {
+      @apply text-lg;
+    }
+
+    @screen md {
+      @apply text-2xl;
+    }
+  }
+
+  &__tab {
+    @apply mt-6;
+  }
+
+  &__tabswrapper {
+    .MuiTab-textColorInherit {
+      color: #4f4f4f;
+      @apply
+        text-base
+        font-semibold;
+    }
+
+    .Mui-selected {
+      @apply
+        text-darkblue
+        font-bold;
+    }
+
+    .MuiTabs-indicator {
+      @apply
+        bg-darkblue
+        h-1;
+    }
+
+    .MuiDivider-root {
+      border-color: #cecece;
+      @apply
+        -mt-0.5;
+    }
+  }
+
+  &__content {
+    @apply
+      flex
+      flex-col
+      mt-6;
+  }
+
+  &__viewall {
+    @apply
+      flex
+      flex-col
+      items-end;
+  }
+
+  &__headline {
+    @apply
+      relative
+      flex
+      flex-col
+      mt-6
+      text-white;
+
+    &--overlay {
+      @apply
+        bg-black
+        bg-opacity-30
+        flex
+        flex-col
+        flex-1
+        justify-end
+        rounded-md
+        z-10;
+
+      @screen xs {
+        @apply
+          px-4
+          pb-4
+          pt-3;
+      }
+
+      @screen md {
+        @apply
+          px-8
+          pb-12
+          pt-6;
+      }
+    }
+
+    &--title {
+      @apply
+        flex
+        flex-col
+        font-bold;
+
+      &::after {
+        content: '';
+        background-color: #f65050;
+        @apply
+          w-20
+          h-px
+          mt-6;
+
+        @screen xs {
+          @apply mt-3;
+        }
+
+        @screen md {
+          @apply mt-6;
+        }
+      }
+
+      &:hover {
+        @apply
+          text-primary-500;
+      }
+
+      @screen xs {
+        @apply text-base;
+      }
+
+      @screen md {
+        @apply text-2xl;
+      }
+    }
+
+    &--caption {
+      @apply
+        mt-2
+        text-xl
+        font-semibold;
+
+      @screen xs {
+        @apply hidden;
+      }
+
+      @screen md {
+        @apply block;
+      }
+    }
+
+    &--date {
+      @apply
+        mt-1
+        text-sm
+        font-bold;
+    }
+
+    &--event {
+      @apply
+        bg-primary-500
+        absolute
+        text-sm
+        px-2
+        py-1
+        rounded
+        z-10;
+
+      @screen xs {
+        @apply
+          top-3
+          left-4;
+      }
+
+      @screen md {
+        @apply
+          top-6
+          left-8;
+      }
+    }
+
+    &--news {
+      @apply
+        bg-red-500
+        absolute
+        top-6
+        left-8
+        text-sm
+        px-2
+        py-1
+        rounded
+        z-10;
+    }
+
+    img {
+      @apply
+        bg-black
+        absolute
+        w-full
+        top-0
+        left-0
+        object-cover
+        rounded-md;
+    }
+
+    @screen xs {
+      height: 200px;
+
+      img {
+        height: 200px;
+      }
+    }
+
+    @screen md {
+      height: 450px;
+
+      img {
+        height: 450px;
+      }
+    }
+  }
+
+  &__grid {
+    @apply
+      grid
+      gap-6
+      mt-6;
+
+    @screen xs {
+      @apply grid-cols-1;
+    }
+
+    @screen md {
+      @apply grid-cols-3;
+    }
+  }
+
+  &__item {
+    max-height: 120px;
+    @apply
+      relative
+      flex
+      border
+      border-solid
+      border-black300
+      rounded-md
+      overflow-hidden;
+
+    img {
+      height: 118px; // 120 - 2 border
+      width: 130px;
+      @apply
+        object-cover
+        rounded-tl-md
+        rounded-bl-md;
+    }
+
+    &--content {
+      @apply
+        flex
+        flex-col
+        justify-between
+        overflow-hidden
+        py-2;
+
+      @screen xs {
+        @apply mx-2;
+      }
+
+      @screen md {
+        @apply mx-4;
+      }
+    }
+
+    &--date {
+      font-size: 0.625rem;
+      color: rgba(57, 57, 57, 0.6);
+    }
+
+    &--title {
+      @apply font-bold;
+
+      &:hover {
+        @apply text-primary-500;
+      }
+
+      @screen xs {
+        @apply text-xs;
+      }
+
+      @screen md {
+        @apply text-sm;
+      }
+    }
+
+    &--event {
+      font-size: 0.5rem;
+      @apply
+        bg-primary-500
+        text-white
+        absolute
+        top-2
+        left-2
+        px-2
+        py-1
+        rounded
+        z-10;
+    }
+
+    &--news {
+      font-size: 0.5rem;
+      @apply
+        bg-red-500
+        text-white
+        absolute
+        top-2
+        left-2
+        px-2
+        py-1
+        rounded
+        z-10;
+    }
+  }
+
+  &__empty {
+    @apply
+      flex
+      flex-col
+      items-center
+      justify-center;
+
+    @screen xs {
+      height: 200px;
+    }
+
+    @screen md {
+      height: 450px;
+    }
+
+    &--title {
+      @apply
+        mt-6
+        text-base
+        font-bold;
+    }
+  }
+
+  &__loading {
+    @apply transform-none;
+
+    &--tabs {
+      @apply h-8;
+    }
+
+    &--headline {
+      @apply
+        mt-6;
+
+      @screen xs {
+        height: 200px;
+      }
+
+      @screen md {
+        height: 450px;
+      }
+    }
+
+    &--item {
+      height: 120px;
+    }
+  }
+}

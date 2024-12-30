@@ -1,0 +1,26 @@
+<svg width="42" height="77" viewBox="0 0 42 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="pita-biru">
+<rect id="Rectangle" y="14" width="28" height="14" fill="#00A7E4"/>
+<rect id="Rectangle_2" opacity="0.6" x="14" y="28" width="28" height="42" fill="#9ED1F1"/>
+<rect id="Rectangle_3" opacity="0.4" y="42" width="28" height="14" fill="#9ED1F1"/>
+<rect id="Rectangle_4" x="28" y="28" width="14" height="14" fill="#65BAE8"/>
+<rect id="Rectangle_5" opacity="0.4" x="28" y="42" width="14" height="14" fill="#65BAE8"/>
+<rect id="Rectangle_6" opacity="0.4" x="28" y="56" width="14" height="14" fill="#9ED1F1"/>
+<path id="Path" opacity="0.65" d="M35 35C31.134 35 28 31.866 28 28H42C42 31.866 38.866 35 35 35Z" fill="#00A7E4"/>
+<path id="Path_2" opacity="0.5" d="M35.0322 76.958C31.1905 76.9554 28.0768 73.8417 28.0742 70H41.9996C41.9983 71.8466 41.2636 73.6171 39.9569 74.922C38.6503 76.2269 36.8788 76.9592 35.0322 76.958Z" fill="#9ED1F1"/>
+<path id="Path_3" opacity="0.25" d="M35 49.0467C35 45.1807 38.134 42.0467 42 42.0467V56.0467C38.134 56.0467 35 52.9127 35 49.0467Z" fill="white"/>
+<rect id="Rectangle_7" opacity="0.2" x="14" y="55.9953" width="14" height="14" fill="white"/>
+<path id="Path_4" opacity="0.5" d="M21 63C21 59.134 24.134 56 28 56V70C24.134 70 21 66.866 21 63Z" fill="white"/>
+<path id="Path_5" opacity="0.3" d="M21 63C21 66.866 17.866 70 14 70V56C17.866 56 21 59.134 21 63Z" fill="white"/>
+<path id="Path_6" opacity="0.65" d="M7 35C3.13401 35 0 31.866 0 28H14C14 31.866 10.866 35 7 35Z" fill="#65BAE8"/>
+<path id="Path_7" opacity="0.65" d="M7 35C7 38.866 3.86599 42 0 42V28C3.86599 28 7 31.134 7 35Z" fill="#65BAE8"/>
+<path id="Path_8" opacity="0.4" d="M35 63C38.866 63 42 66.134 42 70H28C28 66.134 31.134 63 35 63Z" fill="white"/>
+<path id="Path_9" opacity="0.25" d="M35 63C35 66.866 31.866 70 28 70V56C31.866 56 35 59.134 35 63Z" fill="white"/>
+<path id="Path_10" opacity="0.8" d="M21 49C17.134 49 14 45.866 14 42H28C28 45.866 24.866 49 21 49Z" fill="#9ED1F1"/>
+<path id="Path_11" opacity="0.3" d="M21 49.0467C21 52.9127 17.866 56.0467 14 56.0467V42.0467C17.866 42.0467 21 45.1807 21 49.0467Z" fill="white"/>
+<rect id="Rectangle_8" opacity="0.7" y="28" width="28" height="14" fill="#65BAE8"/>
+<path id="Path_12" opacity="0.88" d="M21 35C21 31.134 24.134 28 28 28V42C24.134 42 21 38.866 21 35Z" fill="#9ED1F1"/>
+<path id="Path_13" opacity="0.65" d="M21 35C24.866 35 28 38.134 28 42H14C14 38.134 17.134 35 21 35Z" fill="#3BB3E7"/>
+<path id="Path_14" d="M0 14H28V28H42V0H0V14Z" fill="#0096D9"/>
+</g>
+</svg>

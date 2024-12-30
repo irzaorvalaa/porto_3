@@ -1,0 +1,223 @@
+.header {
+  @apply
+    flex
+    flex-col
+    w-full;
+
+    &__blackbar {
+      min-height: 30px;
+      background-color: black;
+    }
+
+    &__top {
+      min-height: 102px;
+      @apply
+        flex
+        items-stretch;
+
+      @screen xs {
+        @apply bg-primary-500;
+      }
+
+      @screen md {
+        @apply bg-white;
+      }
+    }
+
+    &__bottom {
+      min-height: 60px;
+      @apply
+        bg-primary-500
+        items-stretch;
+
+      @screen xs {
+        @apply hidden;
+      }
+
+      @screen md {
+        @apply flex;
+      }
+    }
+
+    &__container {
+      @apply
+        flex
+        flex-col
+        w-full
+        mx-auto;
+
+      @screen sm {
+        @apply
+          container;
+      }
+    }
+
+    &__row {
+      @apply
+        flex
+        flex-1;
+    }
+
+    &__logo {
+      @screen xs {
+        @apply hidden;
+      }
+
+      @screen md {
+        @apply flex;
+      }
+
+      &--mobile {
+        @apply
+          flex
+          px-4
+          border-b;
+
+        img {
+          max-height: 72px;
+        }
+      }
+
+      img {
+        max-height: 72px;
+      }
+    }
+
+    &__search {
+      @apply
+        flex
+        flex-1
+        items-center;
+
+      @screen xs {
+        @apply mx-0;
+      }
+
+      @screen md {
+        @apply mx-10;
+      }
+    }
+
+    &__searchfield {
+      @apply
+        flex-1;
+
+      @screen xs {
+        @apply bg-white;
+
+        .Mui-focused {
+          fieldset {
+            @apply
+              border-white
+              #{!important};
+          }
+        }
+      }
+
+      @screen md {
+        .Mui-focused {
+          fieldset {
+            @apply
+              border-primary-500
+              #{!important};
+          }
+        }
+      }
+    }
+
+    &__searchbutton {
+      @apply
+        h-10;
+
+      @screen xs {
+        @apply
+          px-0
+          ml-0;
+      }
+
+      @screen md {
+        @apply
+          px-12
+          ml-4;
+      }
+    }
+
+    &__searchicon {
+      @apply
+        w-4
+        h-4;
+    }
+
+    &__account {
+      @apply
+        flex
+        items-center;
+    }
+
+    &__menu {
+      @apply
+        flex
+        mr-2
+        border-b-4
+        border-b-transparent
+        text-base
+        font-normal
+        text-white;
+
+      &:not(:first-child) {
+        @apply
+          ml-2;
+      }
+
+      &--active {
+        @apply
+          border-white
+          font-bold;
+      }
+    }
+
+    &__menuname {
+      @apply
+        px-2
+        h-full
+        text-white
+        flex
+        items-center;
+    }
+
+    &__mobilemenu {
+      @apply
+        items-center
+        mx-4;
+
+      @screen xs {
+        @apply flex;
+      }
+
+      @screen md {
+        @apply hidden;
+      }
+    }
+
+    &__menuicon {
+      @apply
+        h-6
+        w-6
+        text-white;
+    }
+
+    &__linklist {
+      @apply
+        w-full;
+    }
+
+    &__ribbon {
+      @screen xs {
+        @apply hidden;
+      }
+
+      @screen md {
+        @apply block;
+      }
+    }
+}

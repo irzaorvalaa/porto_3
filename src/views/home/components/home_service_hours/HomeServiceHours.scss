@@ -1,0 +1,191 @@
+.home-service-hours {
+  background-color: rgba(0, 151, 218, 0.06);
+  @apply
+    my-7
+    pt-6
+    pb-10;
+
+  &__container {
+    @apply
+      mx-auto;
+
+    @screen xs {
+      @apply
+        w-full
+        px-4;
+    }
+
+    @screen md {
+      @apply
+        container
+        px-0;
+    }
+  }
+
+  &__title {
+    @apply
+      text-darkblue
+      text-2xl
+      font-bold
+      text-center;
+  }
+
+  &__content {
+    @apply
+      mt-6
+      w-full;
+  }
+
+  &__item {
+    @apply
+      flex
+      flex-col
+      items-center
+      justify-center;
+
+    &--title {
+      color: #5e5873;
+      @apply
+        text-xl
+        font-bold
+        mt-4;
+    }
+
+    &--times {
+      min-height: 168px;
+      @apply mt-2;
+    }
+
+    &--days {
+      color: #6e6b7b;
+      @apply
+        text-base
+        text-center;
+    }
+  }
+
+  &__slidewrapper {
+    @apply
+      flex
+      #{!important};
+  }
+
+  &__slidegap {
+    @apply
+      w-2;
+  }
+
+  &__slide {
+    @apply
+      flex-1
+      border
+      border-solid
+      border-black300
+      rounded-2xl
+      shadow
+      mb-1
+      p-6;
+  }
+
+  &__icon {
+    @apply
+      fill-current
+      text-black500
+      h-4
+      w-4
+      mx-auto;
+  }
+
+  &__loading {
+    @apply transform-none;
+
+    &--text {
+      @apply
+        my-2
+        w-8/12;
+    }
+  }
+
+  .slick-track {
+    @apply
+      ml-0
+      mr-0;
+  }
+
+  .slick-arrow {
+    @apply
+      bg-white
+      shadow;
+
+    @screen xs {
+      @apply
+        h-8
+        w-8;
+    }
+    @screen md {
+      @apply
+        h-12
+        w-12;
+    }
+  }
+
+  .slick-next {
+    @apply
+      z-10
+      #{!important};
+
+    &::before {
+      @apply content-none;
+    }
+
+    &:hover, &:focus {
+      @apply
+        text-inherit
+        bg-white;
+    }
+
+    @screen xs {
+      @apply -right-2;
+    }
+
+    @screen md {
+      @apply -right-4;
+    }
+  }
+
+  .slick-prev {
+    @apply
+      z-10
+      #{!important};
+
+    &::before {
+      @apply content-none;
+    }
+
+    &:hover, &:focus {
+      @apply
+        text-inherit
+        bg-white;
+    }
+
+    @screen xs {
+      @apply -left-2;
+    }
+
+    @screen md {
+      @apply -left-4;
+    }
+  }
+
+  .slick-disabled {
+    @apply
+      cursor-default
+      bg-gray-200;
+
+    &:hover, &:focus {
+      @apply
+        text-transparent
+        bg-gray-200;
+    }
+  }
+}

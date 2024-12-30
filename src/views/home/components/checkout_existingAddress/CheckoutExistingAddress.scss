@@ -1,0 +1,83 @@
+.CheckoutExistingAddress {
+  &__containerPage {
+    font-size: 20px;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    max-width: 100%;
+    height: 1300px;
+  }
+  &__cartTitle {
+    border-radius: 0px 10px 10px 0;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    position: relative;
+    display: inline-block;
+    padding-top: 10px;
+    background-color: black;
+  }
+  &__container2 {
+    font-size: 20px;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    max-width: 100%;
+    height: 1300px;
+  }
+  &__radioBtn {
+    @apply m-3;
+  }
+  &__DeliveryAddress {
+    @apply m-3 mt-2;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  &__AddressFormTitle2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 4%;
+    margin-top: 8%;
+  }
+  &__TextField {
+    width: 45%;
+    border-radius: 10px;
+  }
+  &__TextField2 {
+    width: 92.7%;
+  }
+  &__textArea {
+    width: 92.7%;
+    border-width: 4px;
+    border: 4px;
+    color: black;
+  }
+  &__saveAddress {
+    width: 92.7%;
+    border-width: 4px;
+    border: 4px;
+  }
+  &__quantityBox {
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+  }
+  &__Primary {
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    background-color: rgb(216, 2, 2);
+    text-align: center;
+    align-self: center;
+  }
+
+  &__AddressForm {
+    font-size: 20px;
+  }
+  &__checkOut {
+    font-size: 20px;
+    width: 25%;
+  }
+  &__title {
+    @apply text-2xl font-medium text-white text-center;
+  }
+}

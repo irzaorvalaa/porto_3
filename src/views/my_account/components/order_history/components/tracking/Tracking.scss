@@ -1,0 +1,17 @@
+.tracking {
+  @apply my-5 mx-5;
+  &__left {
+    width: 50%;
+    &--title {
+      @apply text-2xl font-bold mb-5 text-center;
+    }
+    &--detail {
+      @apply justify-items-center text-lg;
+      &__first {
+        &--txt {
+          @apply grid grid-flow-col justify-between;
+        }
+      }
+    }
+  }
+}

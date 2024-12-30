@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('./components/button.scss');
+@import url('./components/datagrid.scss');
+@import url('./components/dialog.scss');
+
+@import '../../node_modules/perfect-scrollbar/css/perfect-scrollbar.css';
+
+:root {
+  --drawer-width: 280px;
+  --menu-width: 264px; // 280 - 8 - 8 (spacing.2)
+  --slider-height-desktop: 420px;
+  --slider-height-mobile: 150px;
+  --fe-primary-color: #028ed5;
+}
+
+* {
+  @apply font-open-sans;
+}
+
+body {
+  @apply overscroll-none;
+}
+
+.page {
+   &__container {
+    @apply
+      max-w-full
+      mx-8
+      my-14
+      px-0;
+
+    @screen sm {
+      @apply
+        container
+        mx-auto
+        px-16;
+    }
+  }
+}
+
+

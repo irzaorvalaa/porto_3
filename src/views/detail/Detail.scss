@@ -1,0 +1,215 @@
+$detail-img-width: 285px;
+
+.detail {
+  &__container {
+    @apply
+      flex
+      flex-col
+      mx-auto;
+
+    @screen xs {
+      @apply
+        w-full
+        px-4;
+    }
+
+    @screen md {
+      @apply
+        container
+        px-0;
+    }
+  }
+
+  &__breadcrumb {
+    @apply my-4;
+  }
+
+  &__breadcrumblink {
+    @apply
+      text-sm
+      text-black600;
+
+    &:hover, &--current {
+      @apply
+        text-button-blue;
+    }
+  }
+
+  &__content {
+    @apply
+      flex
+      mb-14;
+
+    @screen xs {
+      @apply flex-col;
+    }
+
+    @screen md {
+      @apply flex-row;
+    }
+  }
+
+  &__cover {
+    img {
+      @apply
+        object-contain
+        rounded-md
+        shadow;
+
+      @screen xs {
+        @apply
+          w-full
+          max-w-full;
+      }
+
+      @screen md {
+        width: $detail-img-width;
+        max-width: $detail-img-width;
+      }
+    }
+
+    button {
+      @apply mt-6;
+    }
+  }
+
+  &__info {
+    @apply
+      flex
+      flex-col
+      flex-1;
+
+    @screen xs {
+      @apply ml-0;
+    }
+
+    @screen md {
+      @apply ml-16;
+    }
+
+    .MuiDivider-root {
+      border-color: #f2f2f2;
+      @apply my-6;
+    }
+  }
+
+  &__title {
+    color: #181725;
+    @apply
+      text-2xl
+      font-bold;
+
+    @screen xs {
+      @apply mt-6;
+    }
+
+    @screen md {
+      @apply mt-0;
+    }
+  }
+
+  &__author {
+    @apply
+      text-black600
+      text-base
+      mt-2;
+  }
+
+  &__keyword {
+    @apply
+      text-bluetheme
+      text-sm
+      font-bold
+      mt-2;
+  }
+
+  &__description {
+    color: #6e6b7b;
+    @apply text-base;
+  }
+
+  &__infodetail {
+    color: #6e6b7b;
+    @apply
+      text-base
+      font-bold;
+  }
+
+  &__grid {
+    @apply
+      grid
+      gap-6
+      mt-4;
+
+    @screen xs {
+      @apply grid-cols-1;
+    }
+
+    @screen md {
+      @apply grid-cols-3;
+    }
+  }
+
+  &__item {}
+
+  &__key {
+    @apply
+      text-black600
+      text-sm;
+  }
+
+  &__value {
+    @apply
+      text-black600
+      text-sm
+      font-bold;
+  }
+
+  &__loading {
+    @apply transform-none;
+
+    &--cover {
+      height: 425px;
+
+      @screen xs {
+        @apply
+          w-full
+          max-w-full;
+      }
+
+      @screen md {
+        width: $detail-img-width;
+        max-width: $detail-img-width;
+      }
+    }
+
+    &--button {
+      @apply
+        mt-6
+        h-8;
+    }
+
+    &--title {
+      @apply
+        h-8
+        w-8/12;
+    }
+
+    &--author {
+      @apply
+        mt-2
+        h-5
+        w-4/12;
+    }
+
+    &--keyword {
+      @apply
+        mt-2
+        h-5
+        w-3/12;
+    }
+  }
+}
+.btn-add {
+  margin-bottom: 10px;
+}

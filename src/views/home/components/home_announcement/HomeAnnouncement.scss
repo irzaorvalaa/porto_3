@@ -1,0 +1,168 @@
+$announcement-img-height: 248px;
+$announcement-img-height-mobile: 180px;
+
+.home-announcement {
+  background-image: url('../../../../../public/images/bg-announcement.png');
+  @apply
+    bg-no-repeat
+    bg-center
+    bg-cover
+    text-white
+    my-7
+    px-6
+    py-6;
+
+  &__container {
+    @apply
+      flex
+      flex-col
+      mx-auto;
+
+    @screen xs {
+      @apply
+        w-full
+        px-4;
+    }
+
+    @screen md {
+      @apply
+        container
+        px-0;
+    }
+  }
+
+  &__title {
+    @apply
+      text-center
+      font-bold;
+
+    @screen xs {
+      @apply text-lg;
+    }
+
+    @screen md {
+      @apply text-2xl;
+    }
+  }
+
+  &__tab {
+    @apply
+      mt-6;
+  }
+
+  &__tabswrapper {
+    .MuiTab-textColorInherit {
+      @apply
+        text-white
+        text-base
+        font-semibold;
+    }
+
+    .Mui-selected {
+      @apply
+        font-bold;
+    }
+
+    .MuiTabs-indicator {
+      @apply
+        bg-white
+        h-1;
+    }
+
+    .MuiDivider-root {
+      @apply
+        border-white
+        -mt-0.5;
+    }
+  }
+
+  &__content {
+    @apply
+      grid
+      gap-4
+      mt-6;
+
+    @screen xs {
+      @apply grid-cols-2;
+    }
+
+    @screen md {
+      @apply grid-cols-4;
+    }
+  }
+
+  &__item {
+    @apply
+      bg-no-repeat
+      bg-cover
+      bg-center
+      flex
+      flex-1
+      rounded-lg
+      overflow-hidden;
+
+    @screen xs {
+      height: $announcement-img-height-mobile;
+      max-height: $announcement-img-height-mobile;
+    }
+
+    @screen md {
+      height: $announcement-img-height;
+      max-height: $announcement-img-height;
+    }
+
+    &--title {
+      @apply
+        bg-black
+        bg-opacity-60
+        flex
+        flex-1
+        items-center
+        justify-center
+        rounded-lg
+        font-bold
+        text-center;
+
+      @screen xs {
+        @apply
+          text-sm
+          px-2;
+      }
+
+      @screen md {
+        @apply
+          text-lg
+          px-4;
+      }
+    }
+  }
+
+  &__empty {
+    @apply
+      col-span-4
+      flex
+      flex-col
+      items-center;
+
+    @screen xs {
+      height: $announcement-img-height-mobile;
+    }
+
+    @screen md {
+      height: $announcement-img-height;
+    }
+
+    &--title {
+      @apply
+        mt-6
+        text-base
+        font-bold;
+    }
+  }
+
+  &__loading {
+    @apply
+      mt-6
+      transform-none;
+  }
+}

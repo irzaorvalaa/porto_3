@@ -1,0 +1,14 @@
+.hero-page {
+    &__container {
+      @apply
+        border-b
+        py-6;
+    }
+
+    &__title {
+      @apply
+        text-2xl
+        text-black
+        text-opacity-70;
+    }
+}

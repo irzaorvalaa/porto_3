@@ -1,0 +1,147 @@
+$collection-img-height: 200px;
+
+.search {
+  &__container {
+    @apply
+      flex
+      flex-col
+      mx-auto;
+
+    @screen xs {
+      @apply
+        w-full
+        px-4;
+    }
+
+    @screen md {
+      @apply
+        container
+        px-0;
+    }
+  }
+
+  &__header {
+    margin-top: 20px;
+    @apply
+      text-darkblue
+      font-bold;
+
+    @screen xs {
+      @apply text-lg;
+    }
+
+    @screen md {
+      @apply text-2xl;
+    }
+  }
+
+  &__grid {
+    @apply
+      grid
+      my-4;
+
+    @screen xs {
+      @apply
+        grid-cols-2;
+    }
+
+    @screen md {
+      @apply
+        grid-cols-3;
+    }
+
+    @screen lg {
+      @apply
+        grid-cols-5;
+    }
+
+    > a {
+      margin: 15px
+    }
+  }
+
+  &__collection {
+    @apply
+      flex
+      flex-col
+      w-full;
+
+    img {
+      height: $collection-img-height;
+      max-height: $collection-img-height;
+      @apply
+        object-contain
+        mx-auto;
+    }
+  }
+
+  &__title {
+    @apply
+      w-full
+      p-4
+      text-sm
+      font-bold
+      text-left;
+
+    &:hover {
+      @apply text-secondary-500;
+    }
+  }
+
+  &__empty {
+    @apply
+      col-span-5
+      flex
+      flex-col
+      items-center
+      justify-center
+      py-6;
+
+    &--title {
+      @apply
+        mt-6
+        text-base
+        font-bold;
+    }
+
+    &--caption {
+      @apply
+        mt-1
+        text-xs
+        text-gray-500;
+    }
+  }
+
+  &__loading {
+    @apply transform-none;
+
+    &--img {
+      height: $collection-img-height;
+      @apply
+        w-10/12
+        mx-auto;
+    }
+
+    &--text {
+      @apply
+        my-2
+        w-11/12
+        mx-auto;
+    }
+  }
+
+  &__breadcrumb {
+    @apply my-4;
+  }
+
+  &__breadcrumblink {
+    @apply
+      text-sm
+      text-black600;
+
+    &:hover, &--current {
+      @apply
+        text-button-blue;
+    }
+  }
+}

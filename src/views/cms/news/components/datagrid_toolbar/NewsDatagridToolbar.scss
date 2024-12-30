@@ -1,0 +1,58 @@
+.datagrid--toolbar {
+  @apply
+    flex
+    pb-6;
+
+  @screen xs {
+    @apply flex-col;
+  }
+
+  @screen md {
+    @apply
+      flex-row
+      items-center
+      justify-between;
+  }
+
+  > div {
+    @apply flex;
+
+    &:first-child {
+      @screen xs {
+        @apply mb-4;
+      }
+
+      @screen md {
+        @apply mb-0;
+      }
+    }
+  }
+
+  button, .datagrid__toolbar--quickfilter {
+    @screen xs {
+      @apply flex-1;
+    }
+
+    @screen md {
+      @apply flex-none;
+    }
+  }
+
+  &__delete {
+    @apply
+      bg-button-red
+      text-white
+      ml-2;
+
+    &:hover {
+      @apply bg-button-red;
+    }
+
+    svg {
+      @apply
+        h-4
+        w-4
+        mr-3;
+    }
+  }
+}

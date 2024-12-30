@@ -1,0 +1,204 @@
+.collection-management-form {
+  &__formwrapper {
+    @apply flex;
+
+    @screen xs {
+      @apply flex-col;
+    }
+
+    @screen md {
+      @apply flex-row;
+    }
+
+    > div {
+      @apply flex-1;
+
+      &:first-child {
+        @screen xs {
+          @apply mr-0;
+        }
+
+        @screen md {
+          @apply mr-2;
+        }
+      }
+
+      &:last-child {
+        @screen xs {
+          @apply ml-0;
+        }
+
+        @screen md {
+          @apply ml-2;
+        }
+      }
+    }
+  }
+
+  &__row {
+    @apply flex
+      items-center;
+
+    &:first-child {
+      @screen xs {
+        @apply mb-4;
+      }
+
+      @screen md {
+        @apply mb-0;
+      }
+    }
+
+    > span {
+      @apply text-base
+        font-semibold
+        mr-2;
+    }
+  }
+
+  &__tabswrapper {
+    @apply mt-4;
+
+    .MuiTab-textColorInherit {
+      background-color: #f2f2f2;
+      @apply text-black
+        text-sm
+        text-opacity-40
+        font-normal
+        border
+        border-solid
+        border-gray-300
+        rounded-tl
+        rounded-tr;
+
+      &:not(:first-child) {
+        @apply ml-2;
+      }
+    }
+
+    .Mui-selected {
+      @apply bg-white
+        text-black
+        font-semibold
+        border
+        border-solid
+        border-gray-300
+        rounded-tl
+        rounded-tr;
+    }
+
+    .MuiTabs-indicator {
+      @apply bg-white
+        h-px;
+    }
+
+    .MuiDivider-root {
+      @apply -mt-px;
+    }
+  }
+
+  &__taberror {
+    @apply bg-red-500
+      text-white
+      border-red-500
+      #{!important};
+  }
+
+  &__fieldauthor {
+    @apply flex;
+
+    > button {
+      @apply h-12
+        w-12
+        ml-2
+        mt-8;
+    }
+  }
+
+  &__table {
+    border-color: #dadada;
+    @apply border
+      rounded-sm;
+  }
+
+  &__thead {
+    background-color: #fbfbfb;
+    color: #323232;
+    @apply font-semibold;
+  }
+
+  &__buttonadd {
+    @apply my-4;
+  }
+
+  &__wrapperupload {
+    @apply flex;
+
+    @screen xs {
+      @apply flex-col;
+    }
+    @screen md {
+      @apply flex-row
+        items-end;
+    }
+
+    > div {
+      @apply w-1/2;
+
+      &:first-child {
+        @apply mr-2;
+      }
+
+      &:last-child {
+        @apply ml-2;
+      }
+    }
+  }
+
+  &__attachedfile {
+    @apply h-24
+      flex
+      items-center
+      justify-center;
+
+    a {
+      @apply text-primary-500;
+
+      &:hover {
+        @apply text-secondary-500;
+      }
+    }
+  }
+
+  &__upload {
+    // @apply
+    //   self-start;
+  }
+
+  &__buttonupload {
+    @apply flex
+      px-4;
+  }
+
+  &__plusicon {
+    @apply fill-current
+      text-primary-500;
+  }
+
+  &__image {
+    @apply flex
+      justify-center
+      mb-2;
+
+    img {
+      @apply h-24
+        border
+        border-solid;
+    }
+  }
+
+  &__filename {
+    @apply text-sm
+      py-1;
+  }
+}

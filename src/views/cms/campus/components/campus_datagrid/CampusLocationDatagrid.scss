@@ -1,0 +1,15 @@
+.campus-location-datagrid {
+  &__icon {
+    @apply
+      h-6
+      w-6;
+
+    &--true {
+      @apply text-green-500;
+    }
+
+    &--false {
+      @apply text-button-red;
+    }
+  }
+}

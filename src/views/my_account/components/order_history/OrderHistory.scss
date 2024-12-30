@@ -1,0 +1,45 @@
+.order-history {
+  border-width: 1px;
+  border-radius: 10px;
+  box-shadow: 1px 3px 10px rgba(49, 0, 50, 0.25);
+  width: 150%;
+  @apply px-5 py-6;
+  &__input {
+    &--1 {
+    }
+  }
+  &__status {
+    @apply my-3 font-bold text-lg;
+    &--title {
+    }
+  }
+  &__identity {
+    @apply font-bold mt-9 justify-between grid grid-flow-col;
+  }
+  &__card {
+    width: 100%;
+    border-width: 1px;
+    border-radius: 10px;
+    box-shadow: 1px 3px 10px rgba(49, 0, 50, 0.25);
+    @apply mb-5;
+    &--items {
+      @apply mx-5 my-5;
+      &__left {
+        width: 70%;
+        &--status {
+          @apply font-bold grid grid-flow-col justify-between mb-5;
+        }
+        &--first {
+          margin-bottom: 20%;
+        }
+        &--second {
+          margin-left: 60%;
+          @apply text-sm;
+        }
+      }
+      &__right {
+        @apply my-auto mx-auto text-center;
+      }
+    }
+  }
+}

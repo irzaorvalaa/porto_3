@@ -1,0 +1,16 @@
+export const ApiFE = {
+  getBanner: 'CMS/FE/Banner/Get',
+  getCampus: 'CMS/FE/Campus/Get',
+  getCollection: 'Collection/FE/Collection/Get',
+  searchCollection: 'Collection/FE/Collection/Search/',
+  getCollectionBy: 'Collection/FE/Collection/By/',
+  getAnnouncement: 'CMS/FE/Announcement/Get',
+  getNews: 'CMS/FE/News/Get',
+  lookupByEmail: 'Identity/BE/Member/LookupByEmail/',
+  getTopic: 'ReferenceClinic/FE/ReferenceTopic/Fetch/',
+  getReference: 'ReferenceClinic/FE/ReferenceSchedule/Fetch/',
+  saveReference: 'ReferenceClinic/FE/Forms/doSave',
+  getTalkToUs: 'ReferenceClinic/FE/Forms/Get',
+  saveTalkToUs: 'ReferenceClinic/FE/Forms/doSave',
+  confirmTalkToUs: 'ReferenceClinic/FE/Forms/doConfirm',
+}

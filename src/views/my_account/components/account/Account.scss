@@ -1,0 +1,21 @@
+.account {
+  background-color: aqua;
+  width: 150%;
+  &__card {
+    width: 100%;
+    &--detail {
+      @apply grid grid-flow-col;
+      &__left {
+        @apply pl-5;
+        &--title {
+          @apply font-bold my-4;
+        }
+      }
+      &__right {
+        &--title {
+          @apply font-bold my-4;
+        }
+      }
+    }
+  }
+}

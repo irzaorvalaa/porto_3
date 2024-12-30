@@ -1,0 +1,114 @@
+.avatar-menu {
+  &__btn {
+    @screen xs {
+      @apply
+        mx-4
+        min-w-0;
+    }
+
+    @screen md {
+      min-width: 64px;
+      @apply
+        mx-0;
+    }
+  }
+
+  &__avatar {
+    @apply h-8
+        w-8;
+    @screen xs {
+      filter: invert(1);
+    }
+
+    &--fe {
+      @apply
+        h-6
+        w-6;
+    }
+  }
+
+  &__paper {
+    filter: drop-shadow(0px 2px 8px rgba(0, 0, 0, 0.32));
+    @apply overflow-visible
+        mt-1.5;
+
+    &--fe {
+      filter: drop-shadow(0px 2px 8px rgba(0, 0, 0, 0.32));
+      @apply overflow-visible
+            mt-1.5;
+
+      &:before {
+        content: "";
+        @apply block
+                absolute
+                top-0
+                left-6
+                h-3
+                w-3
+                bg-white
+                transform
+                -translate-y-1/2
+                rotate-45
+                z-0;
+      }
+    }
+
+    &:before {
+      content: "";
+      @apply block
+            absolute
+            top-0
+            right-3
+            h-3
+            w-3
+            bg-white
+            transform
+            -translate-y-1/2
+            rotate-45
+            z-0;
+    }
+  }
+
+  &__name {
+    @apply flex
+        flex-col
+        items-start
+        font-medium
+        opacity-100 #{!important};
+  }
+
+  &__icon {
+    @apply
+      h-6
+      w-6;
+  }
+
+  &__account {
+    @apply
+      flex
+      flex-col
+      pl-2
+      pr-4
+      items-start
+      justify-start;
+
+    @screen xs {
+      @apply hidden;
+    }
+
+    @screen md {
+      @apply block;
+    }
+
+    &--name {
+      @apply
+        text-black600
+        text-sm;
+    }
+
+    &--type {
+      color: #6d6865;
+      @apply text-sm;
+    }
+  }
+}

@@ -1,0 +1,93 @@
+.report-filter {
+  border-color: #c9c6c6;
+  @apply
+    flex
+    flex-col
+    mt-4
+    border-b;
+
+  &__container {
+    @apply flex;
+
+    @screen xs {
+      @apply
+        flex-col;
+    }
+
+    @screen md {
+      @apply
+        flex-row;
+    }
+
+    > div {
+      &:nth-child(1) {
+        @screen xs {
+          @apply
+            w-full
+            mr-0;
+        }
+
+        @screen md {
+          @apply
+            w-4/12
+            mr-10
+            mb-0;
+        }
+      }
+
+      &:nth-child(2) {
+        @screen xs {
+          @apply w-full;
+        }
+
+        @screen md {
+          @apply w-4/12;
+        }
+      }
+    }
+  }
+
+  &__button {
+    margin-right: 10px;
+    @apply
+      self-start
+      my-6;
+  }
+
+  &__datepicker {
+    @apply
+      flex;
+
+    @screen xs {
+      @apply
+        flex-col;
+    }
+
+    @screen md {
+      @apply
+        flex-row;
+    }
+
+    > div {
+      &:nth-child(1) {
+        @screen xs {
+          @apply mr-0;
+        }
+
+        @screen md {
+          @apply mr-2;
+        }
+      }
+
+      &:nth-child(2) {
+        @screen xs {
+          @apply ml-0;
+        }
+
+        @screen md {
+          @apply ml-2;
+        }
+      }
+    }
+  }
+}

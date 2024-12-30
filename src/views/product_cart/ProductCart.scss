@@ -1,0 +1,83 @@
+.ProductCart {
+  &__container {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 25%;
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 1%;
+    height: auto;
+    border-radius: 0px 10px 10px 0px;
+    background-color: #67102e;
+  }
+  &__pageTitle {
+    @apply mx-auto my-auto;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-wrap: nowrap;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  &__flexCart {
+    @apply mx-auto my-auto w-1/2;
+    margin-left: 4%;
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+  &__flexCheckbox {
+    @apply w-full;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  &__flexCheckbox2 {
+    @apply mt-4;
+    flex-wrap: nowrap;
+    display: flex;
+  }
+  &__productName {
+    @apply mt-2;
+    flex-wrap: nowrap;
+  }
+  &__productName2 {
+    @apply mt-2 w-3/4 mb-2;
+    flex-wrap: nowrap;
+    display: flex;
+  }
+  &__pickAccount {
+    @apply text-red-600 mt-2;
+    display: flex;
+    flex-wrap: wrap;
+    float: right;
+  }
+
+  // @apply rounded-r-lg;
+  // &__checkboxSelect {
+  //   @apply font-medium pt-10 ml-32;
+  // }
+  // &__checkboxSelectUser {
+  //   @apply font-medium pt-2 ml-32;
+  // }
+  // &__title {
+  //   @apply text-2xl font-medium text-white text-center pt-3;
+  // }
+  // &__quantityBox {
+  //   @apply text-lg font-medium text-right;
+  // }
+  // &__Delete {
+  //   @apply text-lg font-medium text-red-500 text-right;
+  // }
+  // &__SelectAccount {
+  //   @apply text-lg font-medium text-yellow-600;
+  // }
+  // &__shoppingSummary {
+  //   @apply font-medium mx-12 my-10;
+  // }
+  // &__buttonProcess {
+  //   color: black;
+  //   width: 80%;
+  //   border-radius: 4px;
+  //   @apply mx-12;
+  // }
+}

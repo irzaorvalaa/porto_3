@@ -1,0 +1,47 @@
+.address {
+  border-width: 1px;
+  border-radius: 10px;
+  box-shadow: 1px 3px 10px rgba(49, 0, 50, 0.25);
+
+  @apply px-6 py-6;
+  &__header {
+    width: 100%;
+    @apply my-5 mx-3;
+  }
+  &__card {
+    width: 100%;
+    border-width: 1px;
+    border-radius: 10px;
+    box-shadow: 1px 3px 10px rgba(49, 0, 50, 0.25);
+    &--left {
+      width: 70%;
+      @apply px-5 py-5;
+      &__city {
+        @apply text-sm my-2 font-bold;
+      }
+      &__name {
+        @apply text-lg font-bold;
+      }
+      &__phone {
+        @apply text-lg;
+      }
+      &__address {
+        @apply text-sm;
+      }
+    }
+    &--right {
+      @apply justify-items-center items-center mx-auto my-auto;
+      &__btn1 {
+        border-radius: 10px;
+        box-shadow: 1px 3px 10px rgba(49, 0, 50, 0.25);
+
+        @apply bg-primary-500 p-4 text-xs text-white font-bold;
+      }
+      &__btn2 {
+        border-radius: 10px;
+        box-shadow: 1px 3px 10px rgba(49, 0, 50, 0.25);
+        @apply bg-primary-500 p-1 text-xs text-white font-bold;
+      }
+    }
+  }
+}

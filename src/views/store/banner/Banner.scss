@@ -1,0 +1,7 @@
+.complex-form {
+  &__formlabel {
+    @apply text-base
+      font-semibold
+      pb-1;
+  }
+}

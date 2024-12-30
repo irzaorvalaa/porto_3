@@ -1,0 +1,43 @@
+.category-card {
+  @apply grid grid-cols-3 gap-5 mx-6;
+  &__container {
+    width: 90%;
+    height: 417.16px;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    background: #ffffff;
+    box-shadow: 0px 7px 16px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+
+    &--img {
+      @apply mx-auto grid grid-flow-col text-center;
+    }
+    &--text {
+      @apply py-3 px-3;
+      &__discount {
+        width: 45.89px;
+        height: 61.57px;
+        margin-left: 5rem;
+        background: #0097da;
+        text-align: center;
+        color: #ffffff;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.35);
+      }
+      &__title {
+        @apply font-bold;
+      }
+      &__price {
+      }
+      &__merchant {
+        color: #8d8d8d;
+      }
+      &__price-fix {
+        font-weight: bold;
+      }
+      &__total-sold {
+        color: #8d8d8d;
+        margin-top: 2rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,92 @@
+.modal-alert {
+    &__container {
+      z-index: 9999;
+      @apply
+        fixed
+        top-0
+        left-0
+        h-screen
+        w-screen
+        overflow-auto
+        flex
+        items-center
+        justify-center
+        bg-black
+        bg-opacity-30;
+    }
+
+    &__wrapper {
+      min-width: 400px;
+      @apply
+        bg-white
+        max-w-lg
+        rounded;
+    }
+
+    &__type {
+      @apply
+        flex
+        justify-center
+        my-4;
+    }
+
+    &__message {
+      @apply
+        px-4
+        text-center;
+    }
+
+    &__action {
+      @apply
+        flex
+        justify-center
+        gap-2
+        py-4;
+    }
+
+    &__icon {
+      border: .25em solid transparent;
+      border-radius: 50%;
+      line-height: 5em;
+      @apply
+        relative
+        flex
+        box-content
+        justify-center
+        w-20
+        h-20
+        cursor-default
+        select-none;
+
+        &--content {
+          @apply
+            flex
+            items-center
+            text-6xl;
+        }
+
+        &--warning {
+          @apply
+            border-orange-300
+            text-orange-300;
+        }
+
+        &--error {
+          @apply
+            border-red-500
+            text-red-500;
+        }
+
+        &--question {
+          @apply
+            border-gray-400
+            text-gray-400;
+        }
+
+        &--success {
+          @apply
+            border-green-500
+            text-green-400;
+        }
+    }
+}

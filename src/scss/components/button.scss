@@ -1,0 +1,92 @@
+.button {
+  @apply
+    text-black;
+
+    &--primary {
+      @apply
+        bg-primary-500
+        text-white
+        #{!important};
+    }
+
+    &--primary-fe {
+      background-color: var(--fe-primary-color) !important;
+      @apply
+        text-white
+        #{!important};
+    }
+
+    &--secondary {
+      @apply
+        bg-secondary-500
+        text-white
+        #{!important};
+    }
+
+    &--secondary-fe {
+      background: linear-gradient(0deg, #F18700 0%, #F39F33 100%) !important;
+      @apply
+        text-white
+        #{!important};
+    }
+
+    &--delete {
+      @apply
+        bg-red-500
+        text-white
+        #{!important};
+    }
+
+    &--large {
+      @apply
+        py-3.5;
+    }
+
+    &__outlined {
+      @apply
+        border-gray-400
+        text-gray-400
+        #{!important};
+
+      &--primary {
+        @apply
+          border-primary-500
+          text-primary-500
+          #{!important};
+      }
+
+      &--secondary {
+        @apply
+          border-secondary-500
+          text-secondary-500
+          #{!important};
+      }
+
+      &--passive {
+        @apply
+          border-black
+          border-opacity-30
+          text-black
+          text-opacity-30
+          #{!important};
+      }
+    }
+
+    &__text {
+
+      &--passive {
+        @apply
+          text-black
+          text-opacity-30
+          #{!important};
+      }
+    }
+
+    &:disabled {
+      @apply
+        bg-opacity-50
+        text-opacity-30
+        border-opacity-50
+        #{!important};
+    }
+}

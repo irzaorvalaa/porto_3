@@ -1,0 +1,21 @@
+.collection-management-course-form {
+  &__form {
+    border-color: #e5e5e5;
+    @apply border
+      rounded-sm
+      px-6
+      pb-6
+      mb-6;
+  }
+
+  &__button {
+    @apply flex
+      mt-6;
+
+    button {
+      &:first-child {
+        @apply mr-4;
+      }
+    }
+  }
+}

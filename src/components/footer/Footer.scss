@@ -1,0 +1,173 @@
+.footer {
+  @apply flex
+    bg-primary-500
+    text-white
+    py-12;
+
+  &__container {
+    @apply flex
+      flex-col
+      mx-auto;
+
+    @screen xs {
+      @apply w-full
+        px-4;
+    }
+
+    @screen md {
+      @apply container
+        px-0;
+    }
+  }
+
+  &__top {
+    @apply flex
+      pb-12;
+
+    @screen xs {
+      @apply flex-col;
+    }
+
+    @screen md {
+      @apply flex-row;
+    }
+  }
+
+  &__bottom {
+    @apply border-t
+      border-t-white
+      pt-6;
+
+    @screen xs {
+      @apply flex-col
+        items-stretch
+        justify-start;
+    }
+
+    @screen md {
+      @apply flex-row
+        items-center
+        justify-between;
+    }
+  }
+
+  &__logo {
+    @screen xs {
+      @apply flex-1;
+    }
+
+    @screen md {
+      flex: 1;
+    }
+
+    img {
+      max-height: 107px;
+    }
+  }
+
+  &__campus {
+    @screen xs {
+      @apply flex-1
+        ml-0
+        mr-0;
+    }
+
+    @screen md {
+      flex: 2;
+      @apply ml-8
+        mr-4;
+    }
+  }
+
+  &__address {
+    @screen xs {
+      @apply flex-1
+        ml-0
+        mr-0
+        hidden;
+    }
+
+    @screen md {
+      flex: 2;
+      @apply ml-4
+        mr-8
+        flex;
+    }
+  }
+
+  &__servicehours {
+    @screen xs {
+      @apply flex-1;
+    }
+
+    @screen md {
+      flex: 1;
+    }
+  }
+
+  &__title {
+    color: #fff;
+    @apply text-2xl;
+
+    @screen xs {
+      @apply mt-6;
+    }
+
+    @screen md {
+      @apply mt-0;
+    }
+  }
+
+  &__content {
+    @apply mt-6
+      text-sm;
+  }
+
+  &__copyright {
+    text-align: center;
+    @apply text-sm;
+  }
+
+  &__sosmed {
+    @apply flex
+    mt-4;
+
+    ul {
+      @apply flex;
+    }
+  }
+
+  &__link {
+    &--sosmed {
+      @apply inline-flex
+        mx-2;
+    }
+
+    &--icon {
+      @apply w-6
+        h-6;
+    }
+
+    &:hover {
+      @apply text-secondary-500;
+    }
+  }
+
+  &__radio {
+    @apply text-white;
+
+    &--label {
+      .MuiFormControlLabel-label {
+        @apply text-sm;
+      }
+    }
+  }
+
+  &__hours {
+    li {
+      &:not(:first-child) {
+        @apply mt-6;
+      }
+    }
+  }
+}

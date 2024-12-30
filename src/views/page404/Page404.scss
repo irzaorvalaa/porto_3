@@ -1,0 +1,54 @@
+.page-404 {
+  @apply
+    min-h-screen
+    bg-primary-500
+    flex
+    items-center
+    justify-center;
+
+    &__container {
+      @apply
+        flex
+        flex-col;
+    }
+
+    &__button {
+      @apply
+        self-center
+        my-6;
+    }
+
+    &__text {
+      @apply
+        text-white
+        text-center;
+
+        &--oops {
+          @apply
+            font-semibold
+            text-5xl
+            italic
+            py-2;
+        }
+
+        &--subs {
+          @apply
+            text-sm
+            py-4;
+        }
+
+        &--404 {
+          @apply
+            text-9xl
+            font-bold
+            py-4;
+        }
+
+        &--not-found {
+          @apply
+            uppercase
+            text-3xl
+            text-gray-300;
+        }
+    }
+}

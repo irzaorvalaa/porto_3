@@ -1,0 +1,140 @@
+[
+  {
+    "id": "1",
+    "title": "Meditations",
+    "author": "Macrus Aurelius",
+    "distr": "Gramedia",
+    "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae quidem similique vitae alias numquam, quam magni autem accusantium at beatae culpa praesentium eum atque modi nobis est incidunt ipsam officia",
+    "image": "assets/img/1.png",
+    "price": 200000,
+    "merchant": "School Simprug",
+    "discountType": 2,
+    "discountValue": 50,
+    "discountedPrice": 100000,
+    "media": [
+      {
+        "id": "",
+        "ytEmbed": "",
+        "mediaUrl": "assets/img/1.png",
+        "isPrimary": true
+      },
+      {
+        "id": "",
+        "ytEmbed": "https://www.youtube.com/embed/XpqqjU7u5Yc",
+        "mediaUrl": "",
+        "isPrimary": false
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "title": "Politics",
+    "author": "Aristoteles",
+    "distr": "Gramedia",
+    "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae quidem similique vitae alias numquam, quam magni autem accusantium at beatae culpa praesentium eum atque modi nobis est incidunt ipsam officia",
+    "image": "assets/img/2.jpeg",
+    "price": 300000,
+    "discountType": 1,
+    "discountValue": 50000,
+    "discountedPrice": 250000,
+    "merchant": "School Simprug",
+    "media": [
+      {
+        "id": "",
+        "ytEmbed": "",
+        "mediaUrl": "https://rpl.apps.binus.ac.id/psppi/upload/noimage.png",
+        "isPrimary": true
+      },
+      {
+        "id": "",
+        "ytEmbed": "https://www.youtube.com/embed/XpqqjU7u5Yc",
+        "mediaUrl": "",
+        "isPrimary": false
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "title": "The Little Book Of Stoicism",
+    "author": "Jonas Salzgeber",
+    "distr": "Gramedia",
+    "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae quidem similique vitae alias numquam, quam magni autem accusantium at beatae culpa praesentium eum atque modi nobis est incidunt ipsam officia",
+
+    "image": "assets/img/3.jpeg",
+    "price": 300000,
+    "discountType": 2,
+    "discountValue": 40,
+    "discountedPrice": 150000,
+    "merchant": "School Simprug",
+    "media": [
+      {
+        "id": "",
+        "ytEmbed": "",
+        "mediaUrl": "https://rpl.apps.binus.ac.id/psppi/upload/noimage.png",
+        "isPrimary": true
+      },
+      {
+        "id": "",
+        "ytEmbed": "https://www.youtube.com/embed/XpqqjU7u5Yc",
+        "mediaUrl": "",
+        "isPrimary": false
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "title": "The Little Book Of Stoicism",
+    "author": "Jonas Salzgeber",
+    "distr": "Gramedia",
+    "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae quidem similique vitae alias numquam, quam magni autem accusantium at beatae culpa praesentium eum atque modi nobis est incidunt ipsam officia",
+
+    "image": "assets/img/3.jpeg",
+    "price": 300000,
+    "discountType": 2,
+    "discountValue": 50,
+    "discountedPrice": 150000,
+    "merchant": "School Simprug",
+    "media": [
+      {
+        "id": "",
+        "ytEmbed": "",
+        "mediaUrl": "https://rpl.apps.binus.ac.id/psppi/upload/noimage.png",
+        "isPrimary": true
+      },
+      {
+        "id": "",
+        "ytEmbed": "https://www.youtube.com/embed/XpqqjU7u5Yc",
+        "mediaUrl": "",
+        "isPrimary": false
+      }
+    ]
+  },
+  {
+    "id": "5",
+    "title": "The Little Book Of Stoicism",
+    "author": "Jonas Salzgeber",
+    "distr": "Gramedia",
+    "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae quidem similique vitae alias numquam, quam magni autem accusantium at beatae culpa praesentium eum atque modi nobis est incidunt ipsam officia",
+
+    "image": "assets/img/3.jpeg",
+    "price": 300000,
+    "discountType": 2,
+    "discountValue": 50,
+    "discountedPrice": 150000,
+    "merchant": "School Simprug",
+    "media": [
+      {
+        "id": "",
+        "ytEmbed": "",
+        "mediaUrl": "https://rpl.apps.binus.ac.id/psppi/upload/noimage.png",
+        "isPrimary": true
+      },
+      {
+        "id": "",
+        "ytEmbed": "https://www.youtube.com/embed/XpqqjU7u5Yc",
+        "mediaUrl": "",
+        "isPrimary": false
+      }
+    ]
+  }
+]

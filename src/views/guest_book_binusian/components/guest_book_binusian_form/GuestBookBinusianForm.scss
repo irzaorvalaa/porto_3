@@ -1,0 +1,152 @@
+.guestbook-binusian-form {
+  @apply
+    flex
+    min-h-screen
+    items-center
+    justify-center;
+
+  &__container {
+    @apply
+      flex
+      flex-col
+      border
+      rounded
+      shadow
+      px-6;
+
+    @screen xs {
+      @apply
+        w-full;
+    }
+
+    @screen md {
+      @apply
+        container;
+    }
+  }
+
+  &__header {
+    @apply
+      flex;
+
+    @screen xs {
+      @apply
+        flex-col;
+    }
+
+    @screen md {
+      @apply
+        flex-row
+        items-center
+        justify-between;
+    }
+  }
+
+  &__logowrapper {
+    @apply
+      flex
+      flex-row;
+  }
+
+  &__logo {
+    @apply
+      ml-4
+      mt-4;
+  }
+
+  &__settingcampus {
+    @apply
+      flex
+      flex-row
+      items-center
+      self-end;
+
+    @screen xs {
+      @apply mt-4;
+    }
+
+    @screen md {
+      @apply mt-0;
+    }
+
+    &--locationicon {
+      @apply
+        h-4
+        w-4
+        text-black500;
+    }
+
+    &--name {
+      @apply
+        text-base
+        font-semibold
+        tracking-wide
+        uppercase
+        mx-4;
+    }
+
+    &--settingicon {
+      color: #323232;
+      @apply
+        h-6
+        w-6;
+    }
+  }
+
+  &__title {
+    @apply
+      my-14
+      text-center
+      text-lg
+      font-semibold;
+  }
+
+  &__form {
+    @apply
+      flex;
+
+    @screen xs {
+      @apply flex-col;
+    }
+
+    @screen md {
+      @apply flex-row;
+    }
+
+    > div {
+      &:nth-child(1) {
+        @apply
+          flex-1;
+
+        @screen xs {
+          @apply mr-0;
+        }
+
+        @screen md {
+          @apply mr-2;
+        }
+      }
+
+      &:nth-child(2) {
+        @apply
+          flex-1;
+
+        @screen xs {
+          @apply ml-0;
+        }
+
+        @screen md {
+          @apply ml-2;
+        }
+      }
+    }
+
+    .Mui-disabled {
+      background-color: #f2f2f2;
+    }
+  }
+
+  &__button {
+    @apply my-6;
+  }
+}

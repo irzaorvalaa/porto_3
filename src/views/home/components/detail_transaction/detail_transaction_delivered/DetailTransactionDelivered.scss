@@ -1,0 +1,424 @@
+.transaction-delivered {
+  position: absolute;
+  &__line {
+    border: 1px solid #bbbbbb;
+    width: 1440px;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    transition: 0.3s;
+  }
+  &__linepayment {
+    border: 1px dashed #bbbbbb;
+    width: 1315px;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+    align-items: center;
+    transition: 0.3s;
+  }
+  &__ordernumber {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 1rem;
+    margin-left: 2%;
+    width: 1185px;
+    text-align: left;
+
+    color: #000000;
+  }
+  &__orderstatus {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: right;
+
+    color: #000000;
+  }
+  &__invoice {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    margin-bottom: 1rem;
+    margin-left: 2%;
+    width: 1050px;
+    text-align: left;
+
+    color: #797979;
+  }
+  &__invoicenumber {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: right;
+
+    color: #797979;
+  }
+  &__purchasedate {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    margin-bottom: 1rem;
+    margin-left: 2%;
+    width: 1065px;
+    text-align: left;
+
+    color: #797979;
+  }
+  &__datepurchase {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: right;
+
+    color: #797979;
+  }
+  &__couriername {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    margin-bottom: 1rem;
+    margin-left: 2%;
+    width: 300px;
+    text-align: left;
+
+    color: #797979;
+  }
+  &__courier {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: right;
+
+    color: #797979;
+  }
+  &__resi {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    margin-bottom: 1rem;
+    margin-left: 2%;
+    width: 300px;
+    text-align: left;
+
+    color: #797979;
+  }
+  &__resinumber {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: right;
+
+    color: #797979;
+  }
+  &__address {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    margin-bottom: 1rem;
+    margin-left: 2%;
+    width: 230px;
+    text-align: left;
+
+    color: #797979;
+  }
+  &__addressname {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 25px;
+    width: 200px;
+    text-align: right;
+
+    color: #000000;
+  }
+  &__addressdetail {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    width: 300px;
+    margin-left: 360px;
+    text-align: justify;
+
+    color: #797979;
+  }
+  &__downloadreceipt {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: right;
+
+    color: #000000;
+  }
+  &__buttonreceipt {
+    text-align: right;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-right: 80px;
+  }
+  &__title {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 25px;
+    margin-top: 2rem;
+    text-align: center;
+
+    color: #000000;
+  }
+
+  &__mintitle {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 1rem;
+    margin-left: 2%;
+    width: 1190px;
+    text-align: left;
+
+    color: #000000;
+  }
+
+  &__method {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 1rem;
+    margin-left: 2%;
+    width: 1120px;
+    text-align: left;
+
+    color: #4d4d4d;
+  }
+  &__methodpayment {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: right;
+
+    color: #4d4d4d;
+  }
+  &__va {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 1rem;
+    margin-left: 2%;
+    width: 1190px;
+    text-align: left;
+
+    color: #4d4d4d;
+  }
+  &__vanumber {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: right;
+
+    color: #000000;
+  }
+  &__waitingpayment {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: right;
+
+    color: #ff0000;
+  }
+
+  &__card {
+    width: 780px;
+    height: 180px;
+    background: #ffffff;
+    box-shadow: 1px 3px 10px rgba(49, 0, 50, 0.25);
+    border-radius: 4px;
+    margin-bottom: 2rem;
+    margin-left: 2%;
+  }
+  &__cardtitle {
+    @apply py-5;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    width: 414px;
+    text-align: left;
+    margin-left: 25%;
+    color: #000000;
+  }
+  &__qty {
+    @apply py-3;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    width: 500px;
+    text-align: left;
+    margin-left: 25%;
+    color: #4f4f4f;
+  }
+  &__total {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    width: 414px;
+    text-align: center;
+    margin-left: 30%;
+    color: #000000;
+  }
+  &__price {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    width: 414px;
+    text-align: center;
+    margin-left: 60%;
+    color: #000000;
+  }
+
+  &__linebottom {
+    border: 8px solid #e1e1e1;
+    width: 1440px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    transition: 0.3s;
+  }
+  &__subtotal {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 1rem;
+    margin-left: 2%;
+    width: 1200px;
+    text-align: left;
+
+    color: #4d4d4d;
+  }
+  &__subtotalprice {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: right;
+
+    color: #7c7c7c;
+  }
+  &__totaldisc {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 1rem;
+    margin-left: 2%;
+    width: 1205px;
+    text-align: left;
+
+    color: #4d4d4d;
+  }
+  &__totaldiscprice {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: right;
+
+    color: #7c7c7c;
+  }
+  &__disc-ongkir {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 1rem;
+    margin-left: 2%;
+    width: 1205px;
+    text-align: left;
+
+    color: #4d4d4d;
+  }
+  &__disc-ongkir-price {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: right;
+
+    color: #7c7c7c;
+  }
+  &__totalpayment {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 1rem;
+    margin-left: 2%;
+    width: 1190px;
+    text-align: left;
+
+    color: #000000;
+  }
+  &__totalpaymentprice {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: right;
+
+    color: #000000;
+  }
+}

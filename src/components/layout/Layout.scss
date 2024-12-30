@@ -1,0 +1,83 @@
+.layout-page {
+  @apply flex;
+
+  &__fe {
+    @apply
+      flex-col
+      bg-white;
+  }
+}
+
+.layout-appbar {
+  @apply
+    bg-white
+    border-b
+    shadow-none;
+
+  @screen sm {
+    width: calc(100% - var(--drawer-width));
+    margin-left: var(--drawer-width);
+  }
+
+    &__icon {
+      @apply mr-1;
+
+      @screen sm {
+        @apply hidden;
+      }
+    }
+}
+
+.layout-nav {
+  @screen sm {
+    width: var(--drawer-width);
+    @apply flex-shrink-0;
+  }
+
+    &__drawer {
+
+        &--mobile {
+          @screen xs {
+            @apply block;
+          }
+
+          @screen sm {
+            @apply hidden;
+          }
+        }
+
+        &--desktop {
+          @screen xs {
+            @apply hidden;
+          }
+
+          @screen sm {
+            @apply block;
+          }
+        }
+
+        & .MuiDrawer-paper {
+          width: var(--drawer-width);
+          @apply
+            box-border
+            border-r-0
+            bg-primary-500
+            text-white;
+        }
+    }
+}
+
+.layout-main {
+  @apply
+    min-h-screen
+    flex-grow
+    px-6;
+
+    &__fe {
+      @apply relative;
+    }
+
+  @screen sm {
+    width: calc(100% - var(--drawer-width));
+  }
+}

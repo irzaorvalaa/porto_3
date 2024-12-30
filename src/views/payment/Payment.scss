@@ -1,0 +1,58 @@
+.payment {
+  &__title {
+    border-radius: 0px 10px 10px 0;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 10px;
+    background-color: black;
+    @apply my-7;
+  }
+  &__container {
+    @apply text-center;
+    &--header {
+      @apply my-5;
+      &__1 {
+        @apply font-bold text-xl mb-3;
+      }
+      &__2 {
+        @apply font-bold text-xl text-red-600 mb-3;
+      }
+      &__3 {
+        @apply text-sm text-gray-600;
+      }
+      &__4 {
+        @apply text-lg font-bold;
+      }
+    }
+    &--method {
+      width: 40%;
+      @apply text-xl font-bold my-5 mx-auto;
+    }
+    &--btn {
+      width: 40%;
+      border-radius: 10px;
+      @apply bg-primary-500 mx-auto mb-4 py-3 text-white font-bold;
+    }
+    &--card {
+      width: 40%;
+      border-width: 1px;
+      @apply mx-auto my-5;
+      &__header {
+        @apply grid grid-flow-col justify-evenly py-4;
+      }
+      &__detail {
+        @apply my-8;
+        &--1 {
+          @apply grid grid-flow-col justify-evenly mb-4 text-center;
+          &__name {
+            @apply text-xs;
+          }
+          &__value {
+            @apply font-bold text-lg;
+          }
+        }
+      }
+    }
+  }
+}

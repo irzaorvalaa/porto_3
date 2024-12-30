@@ -1,0 +1,44 @@
+.dialog {
+  width: 100%;
+  &__header {
+    width: 90%;
+    @apply m-5;
+    &--1 {
+      @apply text-xl font-bold mb-5 grid grid-flow-col justify-between;
+    }
+    &--2 {
+      @apply text-lg text-gray-600;
+    }
+  }
+  &__card {
+    @apply m-5;
+    &--payment-method {
+      &__btn {
+        @apply mb-5;
+      }
+    }
+    &--credit {
+      @apply m-6 font-bold text-lg;
+      &__1 {
+        @apply mb-4;
+      }
+      &__2 {
+        @apply flex flex-row justify-between;
+      }
+      &__btn {
+        @apply bg-primary-500 my-5 font-bold text-white;
+      }
+    }
+    &--bank {
+      @apply m-3;
+      &__text {
+      }
+    }
+    &--footer {
+      @apply grid grid-flow-col justify-between m-6 font-bold;
+      &__price {
+        @apply grid grid-flow-col my-auto;
+      }
+    }
+  }
+}

@@ -1,0 +1,50 @@
+.detail {
+  margin-bottom: 100px;
+    &__container {
+      @apply
+        flex
+        flex-col
+        mx-auto;
+  
+      @screen xs {
+        @apply
+          w-full
+          px-4;
+      }
+  
+      @screen md {
+        @apply
+          container
+          px-0;
+      }
+    }
+  
+    &__breadcrumb {
+      @apply my-4;
+    }
+  
+    &__breadcrumblink {
+      @apply
+        text-sm
+        text-black600;
+  
+      &:hover, &--current {
+        @apply
+          text-button-blue;
+      }
+    }
+  
+    &__content {
+      @apply
+        flex
+        mb-14;
+  
+      @screen xs {
+        @apply flex-col;
+      }
+  
+      @screen md {
+        @apply flex-row;
+      }
+    }
+}
